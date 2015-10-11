@@ -123,19 +123,19 @@ d_\mathrm{V}(\mathbf{q}, \hat{\mathbf{q}}, h^{(q)}) =
 \begin{center}
 \begin{tabular}{|l|l|l|l|l|l|}
 \cline{1-5}
-Predictor & \multicolumn{3}{|c|}{input space } & output space \\ 
+Predictor & \multicolumn{3}{|c|}{input dim. } & output dim. \\ 
 \cline{1-5} 
-LWPR-G euler & \multicolumn{3}{|c|}{18} & 6 \\
-LWPR-GA euler & \multicolumn{3}{|c|}{24} & 6 \\
-LWPR-GAE euler & \multicolumn{3}{|c|}{24 + N*6} & 6 \\
+LWPR-G (e) & \multicolumn{3}{|c|}{18} & 6 \\
+LWPR-GA (e) & \multicolumn{3}{|c|}{24} & 6 \\
+LWPR-GAE (e) & \multicolumn{3}{|c|}{24 + N*6} & 6 \\
 \cline{1-5}
 %Predictor & \multicolumn{3}{|c|}{input space per factor} & output space \\
 \cline{2-4}
  & global & agent & env & \\
 \cline{1-5}
-KDEF euler & 18 & 12 & 6 & 6 \\
-KDEF quat & 21 & 14 & 7 & 7 \\
-KDEF vmf & 21 & 14 & 7 & 7 \\
+KDEF (e) & 18 & 12 & 6 & 6 \\
+KDEF (q) & 21 & 14 & 7 & 7 \\
+KDEF (v) & 21 & 14 & 7 & 7 \\
 \cline{1-5}
 \end{tabular}
 \caption[Input/output space]{Input \& output dimensionality. There are $N$ "environment contacts". There are $N$ environment experts.}\label{tab:InpOutSpace}

@@ -27,12 +27,12 @@ on its surface (Figure~\ref{fig:Setup}). Video and finger position were captured
 \begin{figure}[t]
 \centerline{
 %\includegraphics[width=4.3cm]{topple1}
-\includegraphics[width=3.2cm]{training}
-\includegraphics[width=3.2cm]{complex1}
+\includegraphics[width=3.5cm]{training}
+\includegraphics[width=3.5cm]{complex1}
 }
 \centerline{
-\includegraphics[width=3.2cm]{complex2}
-\includegraphics[width=3.2cm]{complex4}
+\includegraphics[width=3.5cm]{complex2}
+\includegraphics[width=3.5cm]{complex4}
 }
 \caption[Setup]{ In all experiments the robot finger pushes in a straight-line of length $l$=25$\pm$5 cm within a cone of angle $\alpha$=20 deg toward an object (top left). The start point is randomised so that each region on the vertical face is equally likely to be pushed. The red wire-frame shows the output of the visual tracker, the green wire-frame the object pose predicted by the KDEF learner, and the blue wire-frame the prediction of the PhysX simulator.}
 \label{fig:Setup}
@@ -308,7 +308,7 @@ synthetic and real test cases.
 % \end{figure*}
 
 \newlength{\imgBXwid}
-\setlength{\imgBXwid}{2.07cm}
+\setlength{\imgBXwid}{2.2cm}
 \begin{figure*}[tb]
 \centerline{
 \includegraphics[width=\imgBXwid]{images/B1_1exp_20_1}
@@ -381,7 +381,7 @@ effects of adding contact information depicted in Figure~\ref{fig:ToyExample} (b
 }\label{fig:S_av_graphs}
 \end{figure*}
 \newlength{\imgCXwid}
-\setlength{\imgCXwid}{2.07cm}
+\setlength{\imgCXwid}{2.2cm}
 
 \begin{figure*}[t]
 %\centerline{
@@ -451,7 +451,7 @@ effects of adding contact information depicted in Figure~\ref{fig:ToyExample} (b
 \end{figure*}
 
 
-Experiment P3 tests hypothesis H3: can predictors learned from one or two objects transfer their predictions to an object of novel shape? The experiment was run in simulation and with real objects. Shape transfer was tested from i) a polyflap to a box (P3.A) and ii) a box and a cylinder to a double cylinder (P3.B). There were 900 training pushes on the polyflap and 200 test pushes on the box for i), and 200 training pushes (100 box, 100 cylinder) and 100 test pushes (double cylinder) for ii). This experiment ran on real objects for i) and ii) and in simulation for i), giving three train-test conditions in total. We have previously published results from simulation for i) \citep{kopicki-etal-icra11}. All algorithm-information combinations from Table~\ref{tab:algs} were tried. When learning from two objects the same number of factors (experts) were used for each object, and they were matched across the two objects by hand. This means each expert received a mix of data from each object, learning to encode both rolling and sliding or tipping motions.  The normalised average error for all three conditions $E_{av}^{norm}$ is shown in Figure~\ref{fig:S_av_graphs}. Example frames from the experiments are shown in Figure~\ref{fig:ExperimentStransfer}.
+Experiment P3 tests hypothesis H3: can predictors that have been learned from one set of objects transfer their predictions to an object of novel shape? The experiment was run in simulation and with real objects. Shape transfer was tested from i) a polyflap to a box (P3.A) and ii) a box and a cylinder to a double cylinder (P3.B). There were 900 training pushes on the polyflap and 200 test pushes on the box for i), and 200 training pushes (100 box, 100 cylinder) and 100 test pushes (double cylinder) for ii). This experiment ran on real objects for i) and ii) and in simulation for i), giving three train-test conditions in total. We have previously published results from simulation for i) \citep{kopicki-etal-icra11}. All algorithm-information combinations from Table~\ref{tab:algs} were tried. When learning from two objects the same number of factors (experts) were used for each object, and they were matched across the two objects by hand. This means each expert received a mix of data from each object, learning to encode both rolling and sliding or tipping motions.  The normalised average error for all three conditions $E_{av}^{norm}$ is shown in Figure~\ref{fig:S_av_graphs}. Example frames from the experiments are shown in Figure~\ref{fig:ExperimentStransfer}.
 
 \subsubsection{Experiment P3 discussion} Shape transfer only occurs with additional contact information and with factoring, such as for the
 KDEF-GA method in experiment P3.A (Figure~\ref{fig:ExperimentStransfer} column 1).  Learners with global information only predict that the finger passed  through the box (Figure~\ref{fig:ExperimentStransfer} columns 2 and 3). In experiment P3.A, of the learners, only factoring plus all the contact information (KDEF-GAE) produced physically plausible predictions. In Figure~\ref{fig:ExperimentStransfer} (column 6) KDEF-GAE predicts that the double-cylinder slides along the table, whereas KDEF-G and KDEF-GA predict it will penetrate the table (Figure~\ref{fig:ExperimentStransfer} columns 4 and 5). KDEF-GAE also makes physically plausible predictions for a novel real object 
