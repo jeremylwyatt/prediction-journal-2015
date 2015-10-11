@@ -1,0 +1,83 @@
+\section{Transfer Learning: Representing contacts}
+\label{sec:InfoForPrediction}
+\begin{figure}[t]
+\centerline{\includegraphics[width=\columnwidth]{shapes-colour}}
+\caption[Shapes]{Two scenes (left and right),
+each with an object on a tabletop. Only the shape of object $B$ differs between the scenes. Yet when finger A moves as shown by the dashed outline at time $t+1$, the resulting transformation of $B$ will be quite different.}
+\label{fig:Learning.shapes}
+\end{figure}
+The input domains of $f$, $f_{qs}$ $p_{qs}$ as proposed above  adequately represent the behaviour of a specific pair of rigid bodies in a specific environment. They thus provide a well posed version of problem P1 (Action Interpolation). Given this information, however, we cannot solve problems P2 (Action Transfer) or P3 (Shape Transfer). This is because there is insufficient information: the input variables only capture {\em global} relations between objects. To properly pose transfer learning problems we must also explictly capture in the input domain all the {\em local} contact relations between the object and its surroundings. 
+
+To see why, consider a simple case of shape transfer in Figure~\ref{fig:Learning.shapes}. On the left is a training example. On the right is a test case, where the only difference is that the shape of the object has changed: it is wider. Given the same placement of the frames on object and agent, and the same finger motion, the predicted behaviour using Equation~\eqref{eq:Learning.short} must be the same as for the training example. But this is wrong. To enable the correct prediction to be transferred, additional information is needed in the input domain. Specifically, information on the contact between $A$ and $B$ is required. This can be captured by attaching additional frames to $A$ and $B$ close to their point of contact (see Figure~\ref{fig:Learning.setup2} (centre panel)).
+\begin{figure*}[t]
+\centerline{\includegraphics[width=\textwidth]{information}}
+\caption{Three types of information useful in prediction problems. Left: (G - global) global frames of reference for the robot, object and the world. Centre: (A - agent) local frames of reference on the robot finger and the closest point on the object. Right (E - environment) local frames of reference on the object and the closest points on surfaces in the environment.}
+\label{fig:Learning.setup2}
+\end{figure*}
+In general an object has multiple contacts with both the robot, and the environment. Each of these contacts provides a kinematic constraint on the motion of the object, and thus each one should be captured as an input. Only in this way does the predictor have sufficient information to perform transfer learning. Rigid body simulators use just such contact information. 
+
+Our approach is to use a pair of local frames to encode each contact or near contact. Each pair encodes one transformation between part of the object $B$ and another body.  To distinguish these local frame pairs from what has gone before we henceforth refer to the main frame attached to a body (defined in Section~\ref{sec:Representations}) as that body's global frame. 
+
+We can formally define these local frame pairs as follows. Reconsider
+the 2D projection of a robot finger with global frame $A_{t}$, an
+object with global frame $B_{t}$, and the environment global frame $O$
+(Figure~\ref{fig:Learning.setup2}, left panel). We now also define a pair of local frames
+capturing the finger-object contact as $A^{L}_{t}$ and
+$B^{L}_{t}$ (centre panel). These are spatially dynamic, i.e.\ at any time $t$ they
+are located at the points of closest proximity on the finger and
+object respectively.  We define the \textit{agent-object contact}
+information as the transformations $T^{A^{L}_{t}, A^{L}_{t+1}}$ and
+$T^{A^{L}_t, B^{L}_t}$.
+
+Just as the robot's finger contact with the object provides a constraint on motion, so does each contact between the object and its environment. Each contact must therefore be captured with an expert. To achieve this we define a pair of frames to model the exact spatial relationship between two surfaces when they are either close to or actually touching. This enables us to model situations where the object is about to form a contact with a surface in the environment. One frame is attached to some point on the object ($B^{Sk}_t$), and one is attached to the nearest point in the environment $E^{Sk}_t$.  Thus the environment frame within each pair is spatially dynamic, changing its position as the object moves. If $N$ points on the object are chosen for modelling there will be $N$ pairs of local frames $B^{Sk}_t$ and $E^{Sk}_t$ to capture the object-environment contacts at time $t$, where ($k=1 \ldots N$) (Figure~\ref{fig:Learning.setup2} right panel). Using these frame pairs we then define the \textit{object-environment contact}
+information as the set of transformations $T^{E^{Sk}_t,B^{Sk}_t}$ for $k=1 \ldots N$. To obtain the results presented in this paper, the number and the locations of the frames $B^{Sk}_t$ on each different object were determined by hand. In principle this procedure could be automated, but falls beyond the scope of the current work. We have already motivated the need for these additional input
+variables to support shape generalisation. Their utility can also be seen with respect to changes in
+action. The top row of Figure~\ref{fig:ToyExample} shows a training
+and a test case for problem P2 (action transfer). The prediction of the test push trajectory requires some encoding of the kinematic constraint imposed by the contact between the base of the L-shaped flap and the table. This constraint exists in the training push, but was not significant since the flap could rotate on its corner.
+
+We can now consider the effects that different sets of information
+might have on generalised predictions. A predictor endowed only with
+information based on the global frames for each body we refer to as
+having global information (G). We can add agent-object contact
+information to this (G+A), and in turn we can add object-environment
+contact information (G+A+E). Now consider the possible predictions for the test case (Figure~\ref{fig:ToyExample} bottom row). A predictor
+using G will predict that the object will not move, because it has no
+nearby experience to suggest otherwise. A predictor using G+A has
+information from the training case that the object surface will move
+with the finger, so that the finger will not pass through it, but is
+also capable of predicting that the object rotates about the corner
+and into the table since it doesn't model the object-environment
+contact. A predictor using G+A+E will have information about the
+effect of the contact between the base of the flap and the table and
+so should avoid predicting a rotation into the table.
+\begin{figure}[t]
+\centerline{\includegraphics[width=\columnwidth]{BackPushToyExample}}
+\caption[ToyExample]{Information for Action Transfer: an L-shaped object is pushed by a finger. Various predictors are trained solely on forward pushes (top left), but tested on backwards pushes (top right). The top panels show a training and a test push, whereas the bottom panels show predictions given different information (G, G+A and G+A+E) for the test push.}
+\label{fig:ToyExample}
+\end{figure}
+One point is critical here: the above analysis only concerns what the
+information allows, it depends on the ability of the learner to
+utilise it.  To test this we must incorporate the information into
+each learning framework. We can simply extend the regression and density
+estimation frameworks to achieve this. For regression one way to
+incorporate the extra information $A^{L}_{t}$,$B^{L}_{t}$ and
+$E^{Sk}_t$\hspace{-6pt}, $B^{Sk}_t$, provided by the agent and
+environment contacts, is simply to enlarge the domain of function~$f$
+in Equation~\eqref{eq:Learning.short}, that is:
+\begin{multline}
+f'_{qs}: T^{A_t, B_t}, T^{B_t, O}, T^{A_{t}, A_{t+1}}, T^{A^{L}_t, B^{L}_t} \\ \{, T^{E^{Sk}_t,B^{Sk}_t}\}_{k=1 \ldots N} \longrightarrow T^{B_{t}, B_{t+1}}
+\label{eq:Learning.augmented}
+\end{multline}
+\noindent Unfortunately, because the dimensionality of the domain of $f'_{qs}$ grows with the number of environment contacts $N$,
+the difficulty of learning the mapping $f'_{qs}$ rapidly increases
+as more environment contacts are added.
+
+The conditional probability density (CPD) $p_{qs}$ over possible object motions $T^{B_{t}, B_{t+1}}$~\citep{kopicki_prediction_2009} is augmented as follows:
+\begin{multline}
+p_{qs}(T^{B_{t}, B_{t+1}} | T^{A_t, B_t}, T^{B_t, O}, T^{A_{t}, A_{t+1}}, T^{A^{L}_t, B^{L}_t} \\ \{, T^{E^{Sk}_t,B^{Sk}_t}\}_{k=1 \ldots N})
+\label{eq:Learning.density}
+\end{multline}
+
+Again the dimensionality of the conditioning variables makes density
+estimation hard as the number of contacts grows. One way round this in the density estimation case is to factorize the density in a way that
+reflects the contact structure. We consider this in the next section. 
