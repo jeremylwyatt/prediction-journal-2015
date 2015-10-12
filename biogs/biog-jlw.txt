@@ -1,0 +1,3 @@
+Biography
+
+Jeremy L Wyatt is Professor of Robotics and Artificial Intelligence at the University of Birmingham. He has a BA in Theology (Bristol), an MSc in Artificial Intelligence (Sussex) and a PhD in Machine Learning (Edinburgh, 1997). He has published more than 90 refereed papers, edited three books, received two best paper awards, supervised a BCS distinguished doctoral dissertation, and led a variety of research projects on artificial intelligence and robotics. He works on robot task planning, robot motion planning, robot manipulation, and robot learning in open, uncertain and unfamiliar environments.
