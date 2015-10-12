@@ -1,0 +1,3 @@
+Biography
+
+Marek Kopicki is a post-doctoral researcher at the University of Birmingham. He has a MSc in physics at Adam Mickiewicz University (Poznan), a MSc in Advance Computer Science and PhD in robotics at University of Birmingham in 2010. He has more than twelve years’ experience of developing state-of-the-art algorithms and software for robot control and vision which underpinned much of FP7 CogX, FP7 GeRT, and now is central to FP7 PaCMan and H2020 RoMaNs. He invented an adaptive grasping algorithm, for which he holds an international patent pending. He has published a number refereed papers in robotics in conferences and top journals.
