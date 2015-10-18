@@ -1,0 +1,3 @@
+Biography
+
+Dr. Rustam Stolkin currently serves as the Senior Birmingham Fellow in robotics, at University of Birmingham, UK. Dr. Stolkin’s research spans areas of science and engineering outside of robotics, as well as manipulation with robotic arms and hands, novel robotic vehicles, computer vision and other kinds of autonomous sensing, and a long-term interest in engineering and science education. He is involved in collaborations between academia and industry, with current applied projects including robotic decommissioning of nuclear waste, and robotics for bomb disposal and robotics for manufacturing. He is an active member of the IEEE RAS Technical Committee on Robotics and Automation in Nuclear Facilities.
