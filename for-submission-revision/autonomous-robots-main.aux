@@ -1,0 +1,238 @@
+\relax 
+\citation{craik1967nature}
+\citation{kopicki_prediction_2010,kopicki-etal-icra11}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}}
+\newlabel{sec:Introduction}{{1}{1}}
+\citation{flanagan03,flanagan06,mehta02,witney00,johansson92}
+\citation{mason_manipulator_1982,lynch_mechanics_1992,lynchmason96,peshkin_motion_1988,cappelleri_designing_2006,mason_mechanics_2001,flickinger2015}
+\citation{stillman08ijrr}
+\citation{Dogar_2010,lynchmason96}
+\citation{zitoetal-iros12,Cosgun2011}
+\citation{montesano08,moldovan12,hermans11,fitzpatrick_learning_2003,ridge2010self,kroemer2014}
+\citation{mericli2014,scholz2010combining}
+\@writefile{toc}{\contentsline {section}{\numberline {2}The Importance of Prediction for Manipulation}{2}}
+\newlabel{sec:motivation}{{2}{2}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Three Prediction Problems }{2}}
+\newlabel{sec:schema}{{3}{2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Action Interpolation (P1).}{2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Action Transfer (P2).}{2}}
+\citation{Haruno_MOSAIC_2008}
+\citation{demiris2003distributed}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Three types of prediction problem. A robot finger is shown in blue, objects in black, and motions of the finger as dashed lines with arrows. Top row: training actions. Bottom row: an example test action. Each column represents a different problem. Sub-figure (a): Problem 1 - Action Interpolation. Subfigure (b): Problem 2 - Transfer to novel actions. Sub-figure (c): Problem 3 - Transfer to novel shapes. }}{3}}
+\newlabel{fig:three-prediction-problems}{{1}{3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Shape Transfer (P3).}{3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}The case for modular prediction learning}{3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces A modular prediction scheme for solving problem P1. Visual object identification selects a context/predictor, and gives it the object pose and intended finger trajectory as initial input. The chosen predictor takes the current system state $x_t$ and the planned manipulator trajectory $a_{t:t+k}$. The first prediction $\mathaccentV {hat}05E{x}_{t+1}$ is fed back on itself to produce a multi-step prediction $\mathaccentV {hat}05E{x}_{t:t+k}$. }}{3}}
+\newlabel{fig:modular-simple}{{2}{3}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Encoding rigid body kinematics}{3}}
+\newlabel{sec:Representations}{{4}{3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Setup1}}{4}}
+\newlabel{fig:Learning.setup1}{{3}{4}}
+\newlabel{eq:Learning.Similarity}{{1}{4}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Formal statement: learning to predict}{4}}
+\newlabel{sec:PredictionProblem}{{5}{4}}
+\citation{kopicki_prediction_2009}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}One step prediction.}{5}}
+\newlabel{eq:Learning.long}{{2}{5}}
+\newlabel{eq:Learning.short}{{3}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Multi-step prediction.}{5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Shapes}}{5}}
+\newlabel{fig:Learning.shapes}{{4}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Learning to predict as regression.}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Learning to predict as density estimation.}{5}}
+\newlabel{eq:Learning.density1}{{4}{5}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Transfer Learning: Representing contacts}{5}}
+\newlabel{sec:InfoForPrediction}{{6}{5}}
+\citation{kopicki_prediction_2009}
+\newlabel{eq:Learning.augmented}{{5}{6}}
+\newlabel{eq:Learning.density}{{6}{6}}
+\citation{kopicki_prediction_2009,kopicki_prediction_2010}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Three types of information useful in prediction problems. Left: (G - global) global frames of reference for the robot, object and the world. Centre: (A - agent) local frames of reference on the robot finger and the closest point on the object. Right (E - environment) local frames of reference on the object and the closest points on surfaces in the environment.}}{7}}
+\newlabel{fig:Learning.setup2}{{5}{7}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Factorised density estimation}{7}}
+\newlabel{sec:Factors}{{7}{7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces ToyExample}}{7}}
+\newlabel{fig:ToyExample}{{6}{7}}
+\newlabel{eq:Learning.product}{{7}{7}}
+\newlabel{eq:Learning.densityglobal}{{8a}{7}}
+\newlabel{eq:Learning.densitylocal}{{8b}{7}}
+\newlabel{eq:Learning.densityenv}{{8c}{7}}
+\newlabel{eq:Learning.MultiFactorProduct}{{9}{7}}
+\citation{murray_mathematical_1994}
+\citation{vijayakumar_incremental_2005}
+\citation{klanke_library_2008}
+\citation{scott2004multi-dimensional}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Factored Prediction}}{8}}
+\newlabel{fig:modular}{{7}{8}}
+\@writefile{toc}{\contentsline {section}{\numberline {8}Implementation}{8}}
+\newlabel{sec:Implementation}{{8}{8}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.1}Regression method}{8}}
+\newlabel{sec:Implementation.regression}{{8.1}{8}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.2}Kernel density method}{8}}
+\newlabel{sec:Implementation.kde}{{8.2}{8}}
+\citation{scott2004multi-dimensional}
+\citation{abramowitz_handbook_1965}
+\citation{detry_learning_2010}
+\citation{storn_differential_1997}
+\citation{cheng_mean_1995}
+\newlabel{eq:Density.Estimation.mixture}{{15}{9}}
+\newlabel{eq:Density.Estimation.kernel}{{16}{9}}
+\newlabel{eq:Density.Estimation.gaussiandist}{{17}{9}}
+\newlabel{eq:Density.Estimation.gaussvmfdist}{{18}{9}}
+\newlabel{eq:Density.Estimation.vmfdist}{{19}{9}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Input/output space}}{9}}
+\newlabel{tab:InpOutSpace}{{1}{9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.3}Prediction}{9}}
+\newlabel{eq:Density.Estimation.max}{{20}{9}}
+\citation{morwald_edge_2009}
+\citation{nvidia_physx}
+\citation{morwald_edge_2009}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces One-step prediction for the KDEF method}}{10}}
+\newlabel{alg:prediction}{{8}{10}}
+\@writefile{toc}{\contentsline {section}{\numberline {9}Experimental study}{10}}
+\newlabel{sec:Experiment}{{9}{10}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.1}Overview of experiments}{10}}
+\newlabel{sec:Experiment.Overview}{{9.1}{10}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {9.1.1}Experiment P1 (action interpolation)}{10}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {9.1.2}Experiment P2 (action transfer)}{10}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {9.1.3}Experiment P3 (shape transfer)}{10}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.2}Experimental setup}{10}}
+\newlabel{sec:Experiment.Setup}{{9.2}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Setup}}{11}}
+\newlabel{fig:Setup}{{9}{11}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.3}Performance measure}{11}}
+\newlabel{sec:Experiment.Performance}{{9.3}{11}}
+\newlabel{eq:defn_Rt}{{21}{11}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Parameter settings for optimisation of PhysX. }}{11}}
+\newlabel{tab:physx}{{2}{11}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Algorithm-information variants. }}{11}}
+\newlabel{tab:algs}{{3}{11}}
+\newlabel{eq:defn_Et}{{22}{12}}
+\newlabel{eq:Error1}{{23}{12}}
+\@writefile{toc}{\contentsline {section}{\numberline {10}Results}{12}}
+\newlabel{sec:Results}{{10}{12}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.1}Experiment P1: Action Interpolation}{12}}
+\newlabel{sec:Results.Learning}{{10.1}{12}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {10.1.1}Experiment P1 discussion}{12}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.2}Experiment P2: Action Transfer}{12}}
+\newlabel{sec:Results.Action}{{10.2}{12}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {10.2.1}Experiment P2 discussion}{12}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Experiment P1: Convergence of a selection of learning algorithm-information combinations (left column). Change in normalised average prediction errors with varying input information (right column). G - global information; A - agent-object information; E - object-environment information. Standard error bars are shown in black, in most cases these are very small and fall within the symbol for each data point. We show error bars for all data points except for the learning convergence graph shown here.}}{13}}
+\newlabel{fig:Lgraphs}{{10}{13}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.3}Experiment P3: Shape Transfer}{13}}
+\newlabel{sec:Results.Shape}{{10.3}{13}}
+\citation{Miall1996,flanagan03}
+\citation{Haruno_MOSAIC_2008}
+\citation{demiris2006hierarchical}
+\citation{Bahrick1995}
+\citation{spelke1994early}
+\citation{flanagan06}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Performance Table}}{14}}
+\newlabel{tab:PerformanceTableL1av}{{4}{14}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Experiment P1: Convergence of learning for a cylinder on an uneven surface. }}{14}}
+\newlabel{fig:Lgraph-uneven}{{11}{14}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {10.3.1}Experiment P3 discussion}{14}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.4}General Discussion}{14}}
+\citation{mason_manipulator_1982,lynch_mechanics_1992,peshkin_motion_1988,cappelleri_designing_2006}
+\citation{mason_mechanics_2001}
+\citation{brost1985planning}
+\citation{mason1985robot,peshkin_motion_1988}
+\citation{lynchmason96}
+\citation{hayes1995second}
+\citation{kuipers1986qualitative}
+\citation{Mugan-tamd-12}
+\citation{stillman08ijrr,roy2004mental}
+\citation{Dogar_2010}
+\citation{JordanJacobs90,JordanRumelhart92}
+\citation{Ting06,Boots14,dearden2005learning}
+\citation{Schaal97,SchaalAtkeson97}
+\citation{montesano08,moldovan12,hermans11,fitzpatrick_learning_2003,ridge2010self,kroemer2014}
+\citation{hermans13}
+\citation{Stoytchev_affordances_2008}
+\citation{mericli2014}
+\citation{scholz2010combining}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Experiment P1: predictions for a simulated cylinder on a non-planar surface. Predictions were made over 150 steps by the KDEF-GA/quat method. Note that the learned model can correctly predict for two starting orientations, and for dynamic flipping and rolling motions once the finger loses contact. }}{15}}
+\newlabel{fig:ExperimentL1-uneven}{{12}{15}}
+\@writefile{toc}{\contentsline {section}{\numberline {11}Related Work}{15}}
+\newlabel{sec:Background}{{11}{15}}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Experiment P1: polyflap, box and cylinder. Green outline shows predictions. Columns 1-2: KDEF-GA/quat on two trials exhibiting different motions of the polyflap. Col 3: KDEF-GA/quat. Col 4: LWPR-G for one trial in which the box topples over. Col 5: KDEF-GA/quat on another trial in which the box slides. Columns 6-8 show the same push of the cylinder. Col 6: KDEF-GA/quat. Col 7: LWPR-G. Col 8: PhysX. Note tha for columns 6-7 the orientation of the cylinder is show by the rotating frame. Only the learned models predict the rotation correctly. Frame numbers are in the top left of each image. }}{16}}
+\newlabel{fig:ExperimentL2}{{13}{16}}
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Experiment P2: Action transfer. Trained on forward push on polyflap, tested on backward push, for simulated (top) and real data (bottom). Comparative performance of predictors vs. information utilised (global/agent/environment), as measured by normalised average error ${E_{av}^{norm}}$. }}{16}}
+\newlabel{fig:A_av_graphs}{{14}{16}}
+\citation{belter2014iros}
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Experiment P2: Green outline shows predictions. Column 1: KDEF-G/quat. Col 2: KDEF-GA/quat. Col 3: KDEF-GAE/quat. Col 4: KDEF-GA/quat. Col 5: KDEF-G/quat. Col 6: LWPR-G. Col 7: KDEF-GA/quat. Note that the KDEF-G/quat and LWPR-G methods predict that the robot finger passes through the polyflap. Frame numbers are in the top left of each image. }}{17}}
+\newlabel{fig:ExperimentA}{{15}{17}}
+\@writefile{toc}{\contentsline {section}{\numberline {12}Conclusions}{17}}
+\newlabel{sec:Discussion}{{12}{17}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {12.0.1} Prior knowledge}{17}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {12.0.2} Local shape}{17}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {12.0.3} Modularity}{17}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {12.0.4}Multiple changing contacts}{17}}
+\bibstyle{spmpscinat}
+\bibdata{main}
+\bibcite{abramowitz_handbook_1965}{{1}{1965}{{Abramowitz and Stegun}}{{}}}
+\bibcite{SchaalAtkeson97}{{2}{1997}{{Atkeson and Schaal}}{{}}}
+\bibcite{Bahrick1995}{{3}{1995}{{Bahrick and Pickens}}{{}}}
+\bibcite{belter2014iros}{{4}{2014}{{Belter et~al.}}{{Belter, Kopicki, Zurek, and Wyatt}}}
+\bibcite{Boots14}{{5}{2014}{{Boots et~al.}}{{Boots, Byravan, and Fox}}}
+\bibcite{brost1985planning}{{6}{1985}{{Brost}}{{}}}
+\bibcite{cappelleri_designing_2006}{{7}{2006}{{Cappelleri et~al.}}{{Cappelleri, Fink, Mukundakrishnan, Kumar, and Trinkle}}}
+\bibcite{cheng_mean_1995}{{8}{1995}{{Cheng}}{{}}}
+\bibcite{Cosgun2011}{{9}{2011}{{Cosgun et~al.}}{{Cosgun, Hermans, Emeli, and Stilman}}}
+\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces Experiment P3: Comparative performance of predictors vs. information utilised, as measured by the normalised average error ${E_{av}^{norm}}$. }}{18}}
+\newlabel{fig:S_av_graphs}{{16}{18}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {12.0.5} Training noise}{18}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {12.0.6}Dynamics}{18}}
+\bibcite{craik1967nature}{{10}{1943}{{Craik}}{{}}}
+\bibcite{dearden2005learning}{{11}{2005}{{Dearden and Demiris}}{{}}}
+\bibcite{demiris2003distributed}{{12}{2003}{{Demiris and Johnson}}{{}}}
+\bibcite{demiris2006hierarchical}{{13}{2006}{{Demiris and Khadhouri}}{{}}}
+\bibcite{detry_learning_2010}{{14}{2010}{{Detry}}{{}}}
+\bibcite{Dogar_2010}{{15}{2010}{{Dogar and Srinivasa}}{{}}}
+\bibcite{fitzpatrick_learning_2003}{{16}{2003}{{Fitzpatrick et~al.}}{{Fitzpatrick, Metta, Natale, Rao, and Sandini}}}
+\bibcite{flanagan06}{{17}{2006}{{Flanagan et~al.}}{{Flanagan, Bowman, and Johansson}}}
+\bibcite{flanagan03}{{18}{2003}{{Flanagan et~al.}}{{Flanagan, Vetter, Johansson, and Wolpert}}}
+\bibcite{flickinger2015}{{19}{2015}{{Flickinger et~al.}}{{Flickinger, Williams, and Trinkle}}}
+\bibcite{Haruno_MOSAIC_2008}{{20}{2001}{{Haruno et~al.}}{{Haruno, Wolpert, and Kawato}}}
+\bibcite{hayes1995second}{{21}{1995}{{Hayes}}{{}}}
+\bibcite{hermans13}{{22}{2013}{{Hermans et~al.}}{{Hermans, Li, Rehg, and Bobick}}}
+\bibcite{hermans11}{{23}{2011}{{Hermans et~al.}}{{Hermans, Rehg, and Bobick}}}
+\bibcite{johansson92}{{24}{1992}{{Johansson and Cole}}{{}}}
+\bibcite{JordanJacobs90}{{25}{1990}{{Jordan and Jacobs}}{{}}}
+\bibcite{JordanRumelhart92}{{26}{1992}{{Jordan and Rumelhart}}{{}}}
+\bibcite{klanke_library_2008}{{27}{2008}{{Klanke et~al.}}{{Klanke, Vijayakumar, and Schaal}}}
+\bibcite{kopicki_prediction_2010}{{28}{2010}{{Kopicki}}{{}}}
+\bibcite{kopicki_prediction_2009}{{29}{2009}{{Kopicki et~al.}}{{Kopicki, Wyatt, and Stolkin}}}
+\bibcite{kopicki-etal-icra11}{{30}{2011}{{Kopicki et~al.}}{{Kopicki, Zurek, M{\"o}rwald, and Wyatt}}}
+\bibcite{kroemer2014}{{31}{2014}{{Kroemer and Peters}}{{}}}
+\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces Experiment P3: Shape Transfer. Green outline shows predictions. Column\nobreakspace  {}1: KDEF-GA/quat. Col\nobreakspace  {}2: KDEF-G/quat. Col\nobreakspace  {}3: LWPR-G for one trial. Note that the KDEF-G/quat and LWPR-G methods predict that the robot finger moves into the box. Col\nobreakspace  {}4: KDEF-G/quat. Col\nobreakspace  {}5: KDEF-GA/quat. Col\nobreakspace  {}6: KDEF-GAE/quat. Col\nobreakspace  {}7: KDEF-GAE/quat. Frame numbers are in the top left of each image. }}{19}}
+\newlabel{fig:ExperimentStransfer}{{17}{19}}
+\bibcite{kuipers1986qualitative}{{32}{1986}{{Kuipers}}{{}}}
+\bibcite{lynch_mechanics_1992}{{33}{1992}{{Lynch}}{{}}}
+\bibcite{lynchmason96}{{34}{1996}{{Lynch and Mason}}{{}}}
+\bibcite{mason_manipulator_1982}{{35}{1982}{{Mason}}{{}}}
+\bibcite{mason_mechanics_2001}{{36}{2001}{{Mason}}{{}}}
+\bibcite{mason1985robot}{{37}{1985}{{Mason and Salisbury}}{{}}}
+\bibcite{mehta02}{{38}{2002}{{Mehta and Schaal}}{{}}}
+\bibcite{mericli2014}{{39}{2014}{{Meri{\c {c}}li et~al.}}{{Meri{\c {c}}li, Veloso, and Ak{\i }n}}}
+\bibcite{Miall1996}{{40}{1996}{{Miall and Wolpert}}{{}}}
+\bibcite{moldovan12}{{41}{2012}{{Moldovan et~al.}}{{Moldovan, Moreno, van Otterlo, Santos-Victor, and Raedt}}}
+\bibcite{montesano08}{{42}{2008}{{Montesano et~al.}}{{Montesano, Lopes, Bernardino, and Santos-Victor}}}
+\bibcite{morwald_edge_2009}{{43}{2009}{{M{\"o}rwald et~al.}}{{M{\"o}rwald, Zillich, and Vincze}}}
+\bibcite{Mugan-tamd-12}{{44}{2012}{{Mugan and Kuipers}}{{}}}
+\bibcite{murray_mathematical_1994}{{45}{1994}{{Murray et~al.}}{{Murray, Li, and Sastry}}}
+\bibcite{nvidia_physx}{{46}{2009}{{NVIDIA PhysX}}{{}}}
+\bibcite{peshkin_motion_1988}{{47}{1988}{{Peshkin and Sanderson}}{{}}}
+\bibcite{ridge2010self}{{48}{2010}{{Ridge et~al.}}{{Ridge, Skocaj, and Leonardis}}}
+\bibcite{roy2004mental}{{49}{2004}{{Roy et~al.}}{{Roy, Hsiao, and Mavridis}}}
+\bibcite{Schaal97}{{50}{1997}{{Schaal}}{{}}}
+\bibcite{scholz2010combining}{{51}{2010}{{Scholz and Stilman}}{{}}}
+\bibcite{scott2004multi-dimensional}{{52}{2004}{{Scott and Sain}}{{}}}
+\bibcite{spelke1994early}{{53}{1994}{{Spelke et~al.}}{{Spelke, Katz, Purcell, Ehrlich, and Breinlinger}}}
+\bibcite{stillman08ijrr}{{54}{2008}{{Stilman and Kuffner}}{{}}}
+\bibcite{storn_differential_1997}{{55}{1997}{{Storn and Price}}{{}}}
+\bibcite{Stoytchev_affordances_2008}{{56}{2008}{{Stoytchev}}{{}}}
+\bibcite{Ting06}{{57}{2006}{{Ting et~al.}}{{Ting, Mistry, Peters, Schaal, and Nakanishi}}}
+\bibcite{vijayakumar_incremental_2005}{{58}{2005}{{Vijayakumar et~al.}}{{Vijayakumar, D'souza, and Schaal}}}
+\bibcite{witney00}{{59}{2000}{{Witney et~al.}}{{Witney, Goodbody, and Wolpert}}}
+\bibcite{zitoetal-iros12}{{60}{2012}{{Zito et~al.}}{{Zito, Stolkin, Kopicki, and Wyatt}}}

@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: autonomous-robots-main.aux
+The style file: spmpscinat.bst
+Database file #1: main.bib
+Warning--I'm ignoring kopicki_prediction_2009's extra "booktitle" field
+--line 227 of file main.bib
+Warning--missing institution in brost1985planning
+You've used 60 entries,
+            2977 wiz_defined-function locations,
+            955 strings with 15120 characters,
+and the built_in function-call counts, 60810 in all, are:
+= -- 7212
+> -- 1367
+< -- 57
++ -- 816
+- -- 450
+* -- 3163
+:= -- 6602
+add.period$ -- 125
+call.type$ -- 60
+change.case$ -- 491
+chr.to.int$ -- 60
+cite$ -- 61
+duplicate$ -- 6315
+empty$ -- 3549
+format.name$ -- 646
+if$ -- 12335
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 587
+newline$ -- 308
+num.names$ -- 240
+pop$ -- 2372
+preamble$ -- 1
+purify$ -- 450
+quote$ -- 0
+skip$ -- 3605
+stack$ -- 0
+substring$ -- 3119
+swap$ -- 5178
+text.length$ -- 23
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 522
+warning$ -- 1
+while$ -- 312
+width$ -- 0
+write$ -- 781
+(There were 2 warnings)

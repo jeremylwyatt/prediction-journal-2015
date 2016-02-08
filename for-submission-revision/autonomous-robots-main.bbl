@@ -1,0 +1,370 @@
+\begin{thebibliography}{60}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{#1}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{DOI~\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{DOI~\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{Abramowitz and Stegun(1965)}]{abramowitz_handbook_1965}
+Abramowitz, M., Stegun, I.A.:  (1965).
+\newblock \emph{Handbook of Mathematical Functions: With Formulas, Graphs, and
+  Mathematical Tables}.
+\newblock Dover, NY
+
+\bibitem[{Atkeson and Schaal(1997)}]{SchaalAtkeson97}
+Atkeson, C.G., Schaal, S.:  (1997).
+\newblock Learning tasks from a single demonstration.
+\newblock In: \emph{Robotics and Automation, 1997. Proceedings., 1997 IEEE
+  International Conference on}, vol.~2, pp. 1706--1712. IEEE
+
+\bibitem[{Bahrick and Pickens(1995)}]{Bahrick1995}
+Bahrick, L.E., Pickens, J.N.:  (1995).
+\newblock Infant memory for object motion across a period of three months:
+  Implications for a four-phase attention function.
+\newblock \emph{Journal of Experimental Child Psychology} \textbf{59}(3), 343
+  -- 371
+
+\bibitem[{Belter et~al.(2014)Belter, Kopicki, Zurek, and
+  Wyatt}]{belter2014iros}
+Belter, D., Kopicki, M., Zurek, S., Wyatt, J.:  (2014).
+\newblock Kinematically optimised predictions of object motion.
+\newblock In: \emph{Proceedings of the IEEE/RSJ International Conference on
+  Intelligent Robotics and Systems (IROS 2014)}, pp. 4422--4427
+
+\bibitem[{Boots et~al.(2014)Boots, Byravan, and Fox}]{Boots14}
+Boots, B., Byravan, A., Fox, D.:  (2014).
+\newblock Learning predictive models of a depth camera and manipulator from raw
+  execution traces.
+\newblock In: \emph{Proceedings of the IEEE International Conference on
+  Robotics and Automation (ICRA 14)}, pp. 4021--4028. IEEE
+
+\bibitem[{Brost(1985)}]{brost1985planning}
+Brost, R.C.:  (1985).
+\newblock Planning robot grasping motions in the presence of uncertainty.
+\newblock Tech. Rep. CMU-RI-1R-85-12
+
+\bibitem[{Cappelleri et~al.(2006)Cappelleri, Fink, Mukundakrishnan, Kumar, and
+  Trinkle}]{cappelleri_designing_2006}
+Cappelleri, D.J., Fink, J., Mukundakrishnan, B., Kumar, V., Trinkle, J.C.:
+  (2006).
+\newblock Designing open-loop plans for planar micro-manipulation.
+\newblock In: \emph{Proceedings of the IEEE International Conference on
+  Robotics and Automation (ICRA 2006)}, pp. 637--642
+
+\bibitem[{Cheng(1995)}]{cheng_mean_1995}
+Cheng, Y.:  (1995).
+\newblock Mean shift, mode seeking, and clustering.
+\newblock \emph{{IEEE} Transactions on Pattern Analysis and Machine
+  Intelligence} \textbf{17}(8), 790--799
+
+\bibitem[{Cosgun et~al.(2011)Cosgun, Hermans, Emeli, and Stilman}]{Cosgun2011}
+Cosgun, A., Hermans, T., Emeli, V., Stilman, M.:  (2011).
+\newblock Push planning for object placement on cluttered table surfaces.
+\newblock In: \emph{Proceedings of the IEEE/RSJ International Conference on
+  Intelligent Robotics and Systems (IROS 2011)}, pp. 4627--4632. IEEE
+
+\bibitem[{Craik(1943)}]{craik1967nature}
+Craik, K.J.W.:  (1943).
+\newblock \emph{The nature of explanation}.
+\newblock CUP Archive
+
+\bibitem[{Dearden and Demiris(2005)}]{dearden2005learning}
+Dearden, A., Demiris, Y.:  (2005).
+\newblock Learning forward models for robots.
+\newblock In: \emph{Proceedings of the International Joint Conference on
+  Artificial Intelligence (IJCAI 2005)}, vol.~5, p. 1440
+
+\bibitem[{Demiris and Johnson(2003)}]{demiris2003distributed}
+Demiris, Y., Johnson, M.:  (2003).
+\newblock Distributed, predictive perception of actions: a biologically
+  inspired robotics architecture for imitation and learning.
+\newblock \emph{Connection Science} \textbf{15}(4), 231--243
+
+\bibitem[{Demiris and Khadhouri(2006)}]{demiris2006hierarchical}
+Demiris, Y., Khadhouri, B.:  (2006).
+\newblock Hierarchical attentive multiple models for execution and recognition
+  of actions.
+\newblock \emph{Robotics and Autonomous Systems} \textbf{54}(5), 361--369
+
+\bibitem[{Detry(2010)}]{detry_learning_2010}
+Detry, R.:  (2010).
+\newblock \emph{Learning of multi-dimensional, multi-modal features for robotic
+  grasping}.
+\newblock Ph.D. thesis, University of Liege
+
+\bibitem[{Dogar and Srinivasa(2010)}]{Dogar_2010}
+Dogar, M., Srinivasa, S.:  (2010).
+\newblock Push-grasping with dexterous hands: Mechanics and a method.
+\newblock In: \emph{Proceedings of the IEEE/RSJ International Conference on
+  Intelligent Robotics and Systems (IROS 2010)}, pp. 2123--2130
+
+\bibitem[{Fitzpatrick et~al.(2003)Fitzpatrick, Metta, Natale, Rao, and
+  Sandini}]{fitzpatrick_learning_2003}
+Fitzpatrick, P., Metta, G., Natale, L., Rao, S., Sandini, G.:  (2003).
+\newblock Learning about objects through action-initial steps towards
+  artificial cognition.
+\newblock In: \emph{Proceedings of the IEEE International Conference on
+  Robotics and Automation (ICRA 2003)}, vol.~3, pp. 3140--3145
+
+\bibitem[{Flanagan et~al.(2006)Flanagan, Bowman, and Johansson}]{flanagan06}
+Flanagan, J.R., Bowman, M.C., Johansson, R.S.:  (2006).
+\newblock Control strategies in object manipulation tasks.
+\newblock \emph{2006} \textbf{16}, 650--659
+
+\bibitem[{Flanagan et~al.(2003)Flanagan, Vetter, Johansson, and
+  Wolpert}]{flanagan03}
+Flanagan, J.R., Vetter, P., Johansson, R.S., Wolpert, D.M.:  (2003).
+\newblock Prediction precedes control in motor learning.
+\newblock \emph{Current Biology} \textbf{13}, 146--150
+
+\bibitem[{Flickinger et~al.(2015)Flickinger, Williams, and
+  Trinkle}]{flickinger2015}
+Flickinger, D.M., Williams, J., Trinkle, J.C.:  (2015).
+\newblock Performance of a method for formulating geometrically exact
+  complementarity constraints in multibody dynamic simulation.
+\newblock \emph{Journal of Computational and Nonlinear Dynamics}
+  \textbf{10}(1), 011,010--011,010--12
+
+\bibitem[{Haruno et~al.(2001)Haruno, Wolpert, and Kawato}]{Haruno_MOSAIC_2008}
+Haruno, M., Wolpert, D.M., Kawato, M.:  (2001).
+\newblock Mosaic model for sensorimotor learning and control.
+\newblock \emph{Neural Computation} \textbf{13}, 2201--2220
+
+\bibitem[{Hayes(1995)}]{hayes1995second}
+Hayes, P.J.:  (1995).
+\newblock The second naive physics manifesto.
+\newblock In: \emph{Computation \& intelligence}, pp. 567--585. AAAI
+
+\bibitem[{Hermans et~al.(2013)Hermans, Li, Rehg, and Bobick}]{hermans13}
+Hermans, T., Li, F., Rehg, J.M., Bobick, A.F.:  (2013).
+\newblock Learning contact locations for pushing and orienting unknown objects.
+\newblock In: \emph{Proceedings of the IEEE-RAS International Conference on
+  Humanoid Robotics}, pp. 435--442
+
+\bibitem[{Hermans et~al.(2011)Hermans, Rehg, and Bobick}]{hermans11}
+Hermans, T., Rehg, J., Bobick, A.:  (2011).
+\newblock Affordance prediction via learned object attributes.
+\newblock In: \emph{ICRA 2011: Workshop on Semantic Perception, Mapping, and
+  Exploration}
+
+\bibitem[{Johansson and Cole(1992)}]{johansson92}
+Johansson, R.J., Cole, K.J.:  (1992).
+\newblock Sensory-motor coordination during grasping and manipulative actions.
+\newblock \emph{Current Opinion in Neurobiology} \textbf{2}, 815--823
+
+\bibitem[{Jordan and Jacobs(1990)}]{JordanJacobs90}
+Jordan, M.I., Jacobs, R.A.:  (1990).
+\newblock Learning to control an unstable system with forward modeling.
+\newblock In: \emph{Advances in Neural Information Processing Systems}, pp.
+  324--331
+
+\bibitem[{Jordan and Rumelhart(1992)}]{JordanRumelhart92}
+Jordan, M.I., Rumelhart, D.E.:  (1992).
+\newblock Forward models: Supervised learning with a distal teacher.
+\newblock \emph{Cognitive Science} \textbf{16}, 307--354
+
+\bibitem[{Klanke et~al.(2008)Klanke, Vijayakumar, and
+  Schaal}]{klanke_library_2008}
+Klanke, S., Vijayakumar, S., Schaal, S.:  (2008).
+\newblock A library for locally weighted projection regression.
+\newblock \emph{The Journal of Machine Learning Research} \textbf{9}, 623--626
+
+\bibitem[{Kopicki(2010)}]{kopicki_prediction_2010}
+Kopicki, M.:  (2010).
+\newblock \emph{Prediction learning in robotic manipulation}.
+\newblock Ph.D. thesis, University of Birmingham
+
+\bibitem[{Kopicki et~al.(2009)Kopicki, Wyatt, and
+  Stolkin}]{kopicki_prediction_2009}
+Kopicki, M., Wyatt, J., Stolkin, R.:  (2009).
+\newblock Prediction learning in robotic pushing manipulation.
+\newblock In: \emph{Proceedings of the IEEE International Conference n Advanced
+  Robotics (ICAR 2009)}, pp. 1--6
+
+\bibitem[{Kopicki et~al.(2011)Kopicki, Zurek, M{\"o}rwald, and
+  Wyatt}]{kopicki-etal-icra11}
+Kopicki, M., Zurek, S., M{\"o}rwald, T., Wyatt, J.:  (2011).
+\newblock Learning to predict how rigid objects behave under simple
+  manipulation.
+\newblock In: \emph{Proceedings of the IEEE International Conference on
+  Robotics and Automation (ICRA 2011)}
+
+\bibitem[{Kroemer and Peters(2014)}]{kroemer2014}
+Kroemer, O., Peters, J.:  (2014).
+\newblock Predicting object interactions from contact distributions.
+\newblock In: \emph{Proceedings of the IEEE/RSJ International Conference on
+  Intelligent Robotics and Systems (IROS 2014)}
+
+\bibitem[{Kuipers(1986)}]{kuipers1986qualitative}
+Kuipers, B.:  (1986).
+\newblock Qualitative simulation.
+\newblock \emph{Artificial Intelligence Journal} \textbf{29}(3), 289--338
+
+\bibitem[{Lynch(1992)}]{lynch_mechanics_1992}
+Lynch, K.:  (1992).
+\newblock The mechanics of fine manipulation by pushing.
+\newblock In: \emph{Proceedings of the IEEE International Conference on
+  Robotics and Automation (ICRA 1992)}, pp. 2269--2276
+
+\bibitem[{Lynch and Mason(1996)}]{lynchmason96}
+Lynch, K.M., Mason, M.T.:  (1996).
+\newblock Stable pushing: Mechanics, controllability, and planning.
+\newblock \emph{International Journal of Robotics Research} \textbf{15},
+  533--556
+
+\bibitem[{Mason(1982)}]{mason_manipulator_1982}
+Mason, M.T.:  (1982).
+\newblock \emph{Manipulator grasping and pushing operations}.
+\newblock {PhD} thesis, {MIT}
+
+\bibitem[{Mason(2001)}]{mason_mechanics_2001}
+Mason, M.T.:  (2001).
+\newblock \emph{Mechanics of robotic manipulation}.
+\newblock {MIT} press
+
+\bibitem[{Mason and Salisbury(1985)}]{mason1985robot}
+Mason, M.T., Salisbury, J.K.:  (1985).
+\newblock \emph{Robot hands and the mechanics of manipulation}.
+\newblock The MIT Press, Cambridge, MA
+
+\bibitem[{Mehta and Schaal(2002)}]{mehta02}
+Mehta, B., Schaal, S.:  (2002).
+\newblock Forward models in visuomotor control.
+\newblock \emph{Journal of Neurophysiology} \textbf{88}, 942--953
+
+\bibitem[{Meri{\c{c}}li et~al.(2014)Meri{\c{c}}li, Veloso, and
+  Ak{\i}n}]{mericli2014}
+Meri{\c{c}}li, T., Veloso, M., Ak{\i}n, H.L.:  (2014).
+\newblock Push-manipulation of complex passive mobile objects using
+  experimentally acquired motion models.
+\newblock \emph{Autonomous Robots} \textbf{38}(3), 317--329
+
+\bibitem[{Miall and Wolpert(1996)}]{Miall1996}
+Miall, R., Wolpert, D.:  (1996).
+\newblock Forward models for physiological motor control.
+\newblock \emph{Neural Networks} \textbf{9}(8), 1265 -- 1279
+
+\bibitem[{Moldovan et~al.(2012)Moldovan, Moreno, van Otterlo, Santos-Victor,
+  and Raedt}]{moldovan12}
+Moldovan, B., Moreno, P., van Otterlo, M., Santos-Victor, J., Raedt, L.D.:
+  (2012).
+\newblock Learning relational affordance models for robots in multi-object
+  manipulation tasks.
+\newblock In: \emph{Proceedings of the IEEE International Conference on
+  Robotics and Automation (ICRA 2012)}, pp. 4373--4378
+
+\bibitem[{Montesano et~al.(2008)Montesano, Lopes, Bernardino, and
+  Santos-Victor}]{montesano08}
+Montesano, L., Lopes, M., Bernardino, A., Santos-Victor, J.:  (2008).
+\newblock Learning object affordances: From sensory-motor coordination to
+  imitation.
+\newblock \emph{IEEE Transations on Robotics} \textbf{24}(1), 15--26
+
+\bibitem[{M{\"o}rwald et~al.(2009)M{\"o}rwald, Zillich, and
+  Vincze}]{morwald_edge_2009}
+M{\"o}rwald, T., Zillich, M., Vincze, M.:  (2009).
+\newblock Edge tracking of textured objects with a recursive particle filter.
+\newblock In: \emph{Proc. of Graphicon}
+
+\bibitem[{Mugan and Kuipers(2012)}]{Mugan-tamd-12}
+Mugan, J., Kuipers, B.:  (2012).
+\newblock Autonomous learning of high-level states and actions in continuous
+  environments.
+\newblock \emph{IEEE Transactions on Autonomous Mental Development}
+  \textbf{4}(1), 70--86
+
+\bibitem[{Murray et~al.(1994)Murray, Li, and Sastry}]{murray_mathematical_1994}
+Murray, R., Li, Z., Sastry, S.:  (1994).
+\newblock \emph{A mathematical introduction to robotic manipulation}.
+\newblock {CRC} press
+
+\bibitem[{{NVIDIA PhysX}(2009)}]{nvidia_physx}
+{NVIDIA PhysX}: Physics simulation for developers (2009).
+\newblock \urlprefix\url{http://http://developer.nvidia.com/physx}
+
+\bibitem[{Peshkin and Sanderson(1988)}]{peshkin_motion_1988}
+Peshkin, M., Sanderson, A.:  (1988).
+\newblock The motion of a pushed, sliding workpiece.
+\newblock \emph{{IEEE} Journal on Robotics and Automation} \textbf{4}, 569--598
+
+\bibitem[{Ridge et~al.(2010)Ridge, Skocaj, and Leonardis}]{ridge2010self}
+Ridge, B., Skocaj, D., Leonardis, A.:  (2010).
+\newblock Self-supervised cross-modal online learning of basic object
+  affordances for developmental robotic systems.
+\newblock In: \emph{Proceedings of the IEEE International Conference on
+  Robotics and Automation (ICRA 2010)}, pp. 5047--5054
+
+\bibitem[{Roy et~al.(2004)Roy, Hsiao, and Mavridis}]{roy2004mental}
+Roy, D., Hsiao, K.Y., Mavridis, N.:  (2004).
+\newblock Mental imagery for a conversational robot.
+\newblock \emph{Systems, Man, and Cybernetics, Part B: Cybernetics, IEEE
+  Transactions on} \textbf{34}(3), 1374--1383
+
+\bibitem[{Schaal(1997)}]{Schaal97}
+Schaal, S.:  (1997).
+\newblock Learning from demonstration.
+\newblock In: \emph{Advances in Neural Information Processing Systems 9}, pp.
+  1040--1046.
+
+\bibitem[{Scholz and Stilman(2010)}]{scholz2010combining}
+Scholz, J., Stilman, M.:  (2010).
+\newblock Combining motion planning and optimization for flexible robot
+  manipulation.
+\newblock In: \emph{Humanoid Robots (Humanoids), 2010 10th IEEE-RAS
+  International Conference on}, pp. 80--85. IEEE
+
+\bibitem[{Scott and Sain(2004)}]{scott2004multi-dimensional}
+Scott, D.W., Sain, S.R.:  (2004).
+\newblock \emph{Multi-Dimensional Density Estimation}, pp. 229--263.
+\newblock Elsevier
+
+\bibitem[{Spelke et~al.(1994)Spelke, Katz, Purcell, Ehrlich, and
+  Breinlinger}]{spelke1994early}
+Spelke, E.S., Katz, G., Purcell, S.E., Ehrlich, S.M., Breinlinger, K.:  (1994).
+\newblock Early knowledge of object motion: Continuity and inertia.
+\newblock \emph{Cognition} \textbf{51}(2), 131--176
+
+\bibitem[{Stilman and Kuffner(2008)}]{stillman08ijrr}
+Stilman, M., Kuffner, J.J.:  (2008).
+\newblock Planning among movable obstacles with artificial constraints.
+\newblock \emph{International Journal of Robotics Research} \textbf{27}(12),
+  1296--1307
+
+\bibitem[{Storn and Price(1997)}]{storn_differential_1997}
+Storn, R., Price, K.:  (1997).
+\newblock Differential evolution - a simple and efficient heuristic for global
+  optimization over continuous spaces.
+\newblock \emph{Journal of Global Optimization} \textbf{11}(4), 341--359
+
+\bibitem[{Stoytchev(2008)}]{Stoytchev_affordances_2008}
+Stoytchev, A.:  (2008).
+\newblock Learning the affordances of tools using a behavior-grounded approach.
+\newblock \emph{LNAI} \textbf{4760}, 140--158
+
+\bibitem[{Ting et~al.(2006)Ting, Mistry, Peters, Schaal, and
+  Nakanishi}]{Ting06}
+Ting, J.A., Mistry, M., Peters, J., Schaal, S., Nakanishi, J.:  (2006).
+\newblock A {B}ayesian approach to nonlinear parameter identification for rigid
+  body dynamics.
+\newblock In: \emph{Robotics: Science and Systems}
+
+\bibitem[{Vijayakumar et~al.(2005)Vijayakumar, D'souza, and
+  Schaal}]{vijayakumar_incremental_2005}
+Vijayakumar, S., D'souza, A., Schaal, S.:  (2005).
+\newblock Incremental online learning in high dimensions.
+\newblock \emph{Neural Computation} \textbf{17}(12), 2602--2634
+
+\bibitem[{Witney et~al.(2000)Witney, Goodbody, and Wolpert}]{witney00}
+Witney, A.G., Goodbody, S.J., Wolpert, D.M.:  (2000).
+\newblock Learning and decay of prediction in object manipulation.
+\newblock \emph{Journal of Neurophysiology} \textbf{84}(1), 334--343
+
+\bibitem[{Zito et~al.(2012)Zito, Stolkin, Kopicki, and Wyatt}]{zitoetal-iros12}
+Zito, C., Stolkin, R., Kopicki, M., Wyatt, J.L.:  (2012).
+\newblock Two-level {RRT} planning for robotic push manipulation.
+\newblock In: \emph{Proceedings of the IEEE/RSJ International Conference on
+  Intelligent Robotics and Systems (IROS 2012)}, pp. 678--685. IEEE
+
+\end{thebibliography}
